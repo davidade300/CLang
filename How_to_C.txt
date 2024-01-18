@@ -1,3 +1,37 @@
 como compilar e executar no Linux:
     gcc nomedoarquivo.c -o nomedoarquivo.out
     ./nomedoarquivo.out   -> executa
+
+tipos de variáveis:
+    char -> caractere único, valores literais devem ter aspas simples ex.: 'F'
+    char[ ] -> texto, basicamente um array de chars
+    int -> inteiro 
+    int -> logico : 0 = falso / qualquer outro valor = verdadeiro
+    bool -> logico 0 / 1
+    float -> precisão de 8 digitos
+    double -> precisão de 15 digitos
+
+atribuicao de valores literais à variáveis:
+    #include <string.h>
+
+    char nomevar[n];
+    strcpy(nomevar, "nomenomenome");
+
+    alternativamente, na instanciação da variável, podemos inserir o valor:
+        char nome[n] = "nomenomenome"
+
+Saida de dados:
+    o comando print(printf) em C, requer um placeholder de formatação:
+        int           -> %d ou %i
+        long int      -> %li
+        long long int -> %lli
+        float         -> %f
+        double        -> %lf
+        char          -> %c
+        char[ ]       -> %s
+    lembrando que ao fim de qualquer linha de impressão é ideal efetuar uma quebra de linha
+    exemplo de comando de impressão com um double:
+        printf("%lf\n", nomevar);
+    controlando o numero de decimais de um double -> basta colocar ".n" antes do lf ex.:
+        imprimindo com 2 casas decimais:
+            printf("%.2lf\n", nomevar);
