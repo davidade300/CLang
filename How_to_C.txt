@@ -1,0 +1,3 @@
+como compilar e executar no Linux:
+    gcc nomedoarquivo.c -o nomedoarquivo.out
+    ./nomedoarquivo.out   -> executa
