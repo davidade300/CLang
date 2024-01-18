@@ -1,6 +1,6 @@
 {
     "files.associations": {
         "OlaMundo.C": "c",
-        "HelloWorld.C": "cpp"
+        "HelloWorld.C": "c"
     }
 }
